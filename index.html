@@ -20,7 +20,27 @@
             }   
         }
 
+        function playRound (computerPlay, playerSelection) {
+            if (computerPlay === playerSelection) {
+                return 'Tie'
+            }
+
+            if (computerPlay === 'Rock' && playerSelection === 'Scissors')
+                (computerPlay === 'Paper' && playerSelection === 'Rock')
+                (computerPlay === 'Scissors' && playerSelection === 'Paper'); {
+                    return 'Computer wins! :('
+                }
+            
+            if (playerSelection === 'Rock' && computerPlay === 'Scissors')
+                (playerSelection === 'Paper' && computerPlay === 'Rock')
+                (playerSelection === 'Scissors' && computerPlay === 'Paper'); {
+                    return 'You win! :)'
+                }
+
+
+        }
         
+
     </script>
     
 </body>
