@@ -5,43 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
+    <script src="/java.js" ></script>
 </head>
 <body>
-    Rock Paper Scissors Game 
-    
-    <script>
-
-        function computerPlay() {
-            let randomNumber = Math.floor(Math.random()*3)
-            switch (randomNumber) {
-                case 0: return 'Rock'
-                case 1: return 'Paper'
-                case 2: return 'Scissors'
-            }   
-        }
-
-        function playRound (computerPlay, playerSelection) {
-            if (computerPlay === playerSelection) {
-                return 'Tie'
-            }
-
-            if (computerPlay === 'Rock' && playerSelection === 'Scissors')
-                (computerPlay === 'Paper' && playerSelection === 'Rock')
-                (computerPlay === 'Scissors' && playerSelection === 'Paper'); {
-                    return 'Computer wins! :('
-                }
-            
-            if (playerSelection === 'Rock' && computerPlay === 'Scissors')
-                (playerSelection === 'Paper' && computerPlay === 'Rock')
-                (playerSelection === 'Scissors' && computerPlay === 'Paper'); {
-                    return 'You win! :)'
-                }
-
-
-        }
-        
-
-    </script>
-    
+    <p>Rock Paper Scissors Game</p>
 </body>
 </html>
