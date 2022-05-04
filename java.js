@@ -24,28 +24,58 @@ function playRound (computerPlay, playerSelection) {
     
     if (playerSelection === 'rock') {
         if (computerPlay === 'paper') {
-            return 'Computer won!' + ' ' + computerPlay + ' ' + 'beats' + ' ' + playerSelection;
+            computerScore++;
+            return 'Computer won!' + ' ' + computerPlay + ' ' + 'beats' + ' ' + playerSelection; 
         } else {
+            playerScore++;
             return 'You won!' + ' ' + playerSelection + ' ' + 'beats' + ' ' + computerPlay;
         }
     }
 
     if (playerSelection === 'paper') {
         if (computerPlay === 'scissors') {
+            computerScore++;
             return 'Computer won!' + ' ' + computerPlay + ' ' + 'beats' + ' ' + playerSelection;
         } else {
-            return 'You won!' + ' ' + playerSelection + ' ' + 'beats' + ' ' + computerPlay;
+            playerScore++;
+            return 'You won!' + ' ' + playerSelection + ' ' + 'beats' + ' ' + computerPlay
         }
     }
 
     if (playerSelection === 'scissors') {
         if (computerPlay === 'rock') {
-            return 'Computer won!' + ' ' + computerPlay + ' ' + 'beats' + ' ' + playerSelection;
+           computerScore++; 
+           return 'Computer won!' + ' ' + computerPlay + ' ' + 'beats' + ' ' + playerSelection;
         } else {
+            playerScore++;
             return 'You won!' + ' ' + playerSelection + ' ' + 'beats' + ' ' + computerPlay;
         }
     }
 };
 
 
+
+let playerScore =  0;
+let computerScore = 0;
+
+function score() {
+    return 'Player score is' + ' ' + playerScore + ' ' + 'and computer score is' + ' ' + computerScore;
+            
+};
+
+function game() {
+    if (playerScore == 5) {
+        alert ('Congratulations. You win the game!');
+    }
+    if (computerScore == 5) {
+        alert ('Computer wins. Good luck next time!');
+    } else { return 'Game in progress...'}
+};
+
+console.log(playRound(computerPlay(),'rock'));
+console.log(score());
+console.log(game());
+
+
+    
 
