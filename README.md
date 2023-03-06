@@ -19,7 +19,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 TIP CALCULATOR <a name="about-project"></a>
+# 📖 ROCK-PAPER-SCISSORS GAME <a name="about-project"></a>
 
 **ROCK-PAPER-SCISSORS GAME** is an aplication where you can play classic game "rock-paper-scissors". 
 
