@@ -161,6 +161,10 @@ body {
     }
 
     .restart-btn {
-        height: 100px;
+        height: 70px;
+    }
+
+    .restart-btn:hover {
+        height: 70px;
     }
 }
