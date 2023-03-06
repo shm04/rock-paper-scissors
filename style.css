@@ -55,6 +55,22 @@ body {
     justify-content: space-around;
     margin-top: 50px;
     color: darkblue;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.player-p,
+.computer-p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 50px;
+}
+
+#player-pick,
+#computer-pick {
+    color: rgba(255, 0, 0, 0.815);
+    margin-left: 15px;
 }
 
 .result-div {
@@ -71,8 +87,9 @@ body {
     text-align: center;
 }
 
-.you-win,
-.compu-wins {
+#you-win,
+#compu-wins,
+#you-tie {
     display: none;
     margin: 60px 0 60px 0; 
 }

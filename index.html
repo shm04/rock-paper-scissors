@@ -16,23 +16,24 @@
             <h1 class="game-title">Rock-Paper-Scissors Game</h1>
         </header>
         <div class="btns-div">
-            <button class="game-btns"><img src="imgs/rock.png"></button>
-            <button class="game-btns"><img src="imgs/paper.png"></button>
-            <button class="game-btns"><img src="imgs/scissors.png"></button>
+            <button id="rock" class="game-btns"><img src="imgs/rock.png"></button>
+            <button id="paper" class="game-btns"><img src="imgs/paper.png"></button>
+            <button id="scissors" class="game-btns"><img src="imgs/scissors.png"></button>
         </div>
         <div class="picks-div">
-            <h2>You pick:</h2>
-            <h2>Computer picks:</h2>
+            <h2 class="player-p">You pick: <p id="player-pick"></p></h2>
+            <h2 class="computer-p">Computer picks:  <p id="computer-pick"></p></h2>
         </div>
         <div class="result-div">
-            <h1 class="you-win">YOU WIN!</h1>
-            <h1 class="compu-wins">COMPUTER WINS!</h1>
+            <h1 id="you-win">YOU WIN!</h1>
+            <h1 id="you-tie">YOU TIE!</h1>
+            <h1 id="compu-wins">COMPUTER WINS!</h1>
         </div>
         <div class="scores-div">
-            <h2>Your score: <span>0</span></h2>
-            <h2>Computer´s score: <span>0</span></h2>
+            <h2 id="player-score">Your score: <span>0</span></h2>
+            <h2 id="compu-score">Computer´s score: <span>0</span></h2>
         </div>
-        <button class="restart-btn">Restart Game</button>
+        <button id="restart-btn" class="restart-btn">Restart Game</button>
     </div>
     <script src="script.js"></script>
 </body>
