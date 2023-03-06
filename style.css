@@ -1,0 +1,147 @@
+body {
+    height: 97vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100svw;
+    height: 100svh;
+    background-color: #9fe7f5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 50px;
+
+}
+
+.game-title {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+    color: rgb(17, 79, 250);
+}
+
+.btns-div {
+    display: flex;
+    justify-content: center;
+}
+
+.game-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: rgb(78, 220, 255);
+    border: none;
+    margin: 0 5vw 0 5vw;
+}
+
+.game-btns:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 17, 255, 0.336), 0 17px 50px 0 rgba(0, 60, 255, 0.19); 
+    transition: all 0.3s ease-out;
+    width: 105px;
+    height: 105px;
+    color: white;
+}
+
+.picks-div {
+    font-family: 'Quantico', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    color: darkblue;
+}
+
+.result-div {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(45deg, red, orange, green, blue, indigo, violet, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+}
+
+.you-win,
+.compu-wins {
+    display: none;
+    margin: 60px 0 60px 0; 
+}
+
+.scores-div {
+    font-family: 'Quantico', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(78, 220, 255);
+    background-color: black;
+    padding: 10px 0 10px 30px;
+    border-radius: 50px;
+    margin: 30px 0 20px 0;
+}
+
+.restart-btn {
+    align-self: center;
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 25px;
+    background-color: rgb(78, 220, 255);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.restart-btn:hover {
+    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%); 
+    width: 205px;
+    height: 55px;
+    background-color: darkblue;
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #9fe7f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-container {
+        margin: 0;
+    }
+
+    .game-title {
+        padding: 20px 10px 0 10px;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .btns-div {
+        flex-wrap: wrap;
+    }
+
+    .game-btns {
+        margin: 10px;
+    }
+
+    .picks-div {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .scores-div {
+        flex-direction: column;
+    }
+}
